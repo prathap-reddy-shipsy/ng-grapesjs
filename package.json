@@ -1,0 +1,43 @@
+{
+  "name": "ngx-grapesjs",
+  "version": "2.0.0",
+  "description": "Angular wrapper library for GrapesJS",
+  "peerDependencies": {
+    "@angular/common": "^16.0.0",
+    "@angular/core": "^16.0.0",
+    "grapesjs": "^0.21.1",
+    "grapesjs-preset-newsletter": "^1.0.1",
+    "grapesjs-preset-webpage": "^1.0.2",
+    "grapesjs-blocks-basic": "^1.0.1"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Developer-Plexscape/ngx-grapesjs.git"
+  },
+  "author": "Plexscape",
+  "bugs": {
+    "url": "https://github.com/Developer-Plexscape/ngx-grapesjs/issues"
+  },
+  "homepage": "https://github.com/Developer-Plexscape/ngx-grapesjs#readme",
+  "schematics": "./schematics/collection.json",
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "module": "fesm2022/ngx-grapesjs.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ngx-grapesjs.mjs",
+      "esm": "./esm2022/ngx-grapesjs.mjs",
+      "default": "./fesm2022/ngx-grapesjs.mjs"
+    }
+  },
+  "sideEffects": false
+}
