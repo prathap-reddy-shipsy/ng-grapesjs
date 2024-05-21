@@ -149,9 +149,11 @@ class NgxWebpageEditorComponent extends NgxEditorComponent {
                 'grapesjs-preset-webpage',
                 'gjs-blocks-basic',
                 'grapesjs-plugin-forms',
-                'grapesjs-plugin-ckeditor'
+                'grapesjs-plugin-ckeditor',
+                'grapesjs-blocks-table'
             ],
             pluginsOpts: {
+                'grapesjs-blocks-table' : { 'containerId' : '#gjs' },
                 'grapesjs-preset-webpage': {
                     modalTitleImport: 'Import template'
                 }
