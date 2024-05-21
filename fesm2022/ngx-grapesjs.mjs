@@ -27,6 +27,7 @@ class NgxEditorComponent {
                 id: this.storagePrefix
             }
         };
+        console.log('config');
         return grapesjs.init({
             ...config,
             ...customConfig
@@ -102,21 +103,6 @@ class NgxNewsletterEditorComponent extends NgxEditorComponent {
                     title: 'Redo'
                 }
             }
-        ]);
-        const pn = this.editor?.Panels;
-        const panelViews = pn.addPanel({
-        id: "views"
-        });
-        panelViews.get("buttons").add([
-        {
-            attributes: {
-            title: "Open Code"
-            },
-            className: "fa fa-file-code-o",
-            command: "open-code",
-            togglable: false, //do not close when button is clicked again
-            id: "open-code"
-        }
         ]);
     }
     addPlaceholders() {
