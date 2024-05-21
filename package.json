@@ -9,8 +9,7 @@
     "grapesjs-preset-newsletter": "^1.0.1",
     "grapesjs-preset-webpage": "^1.0.3",
     "grapesjs-blocks-basic": "^1.0.2",
-    "grapesjs-plugin-forms": "2.0.6",
-    "grapesjs-table": "1.0.8"
+    "grapesjs-plugin-forms": "2.0.6"
   },
   "dependencies": {
     "tslib": "^2.3.0"
