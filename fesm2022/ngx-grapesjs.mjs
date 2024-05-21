@@ -148,7 +148,8 @@ class NgxWebpageEditorComponent extends NgxEditorComponent {
             plugins: [
                 'grapesjs-preset-webpage',
                 'gjs-blocks-basic',
-                'grapesjs-plugin-forms'
+                'grapesjs-plugin-forms',
+                'grapesjs-table'
             ],
             pluginsOpts: {
                 'grapesjs-preset-webpage': {
