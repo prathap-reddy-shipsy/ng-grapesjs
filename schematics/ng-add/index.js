@@ -15,7 +15,7 @@ const utility_1 = require("./utility");
 const ngAdd = (options) => () => __awaiter(void 0, void 0, void 0, function* () {
     const grapesJsAssetPaths = ['node_modules/grapesjs/dist/grapes.min.js'];
     if (options.editorType === 'webpageEditor') {
-        grapesJsAssetPaths.push('node_modules/grapesjs-preset-webpage/dist/index.js', 'node_modules/grapesjs-blocks-basic/dist/index.js', 'node_modules/grapesjs-plugin-forms/dist/index.js', 'node_modules/grapesjs-plugin-ckeditor/dist/index.js', 'node_modules/grapesjs-blocks-table/dist/grapesjs-blocks-table.min.js');
+        grapesJsAssetPaths.push('node_modules/grapesjs-preset-webpage/dist/index.js', 'node_modules/grapesjs-blocks-basic/dist/index.js', 'node_modules/grapesjs-plugin-forms/dist/index.js', 'node_modules/grapesjs-plugin-ckeditor/dist/index.js', 'node_modules/grapesjs-blocks-table/dist/grapesjs-blocks-table.min.js', 'node_modules/grapesjs-component-code-editor/dist/grapesjs-component-code-editor.min.js');
     }
     else {
         grapesJsAssetPaths.push('node_modules/grapesjs-preset-newsletter/dist/index.js');

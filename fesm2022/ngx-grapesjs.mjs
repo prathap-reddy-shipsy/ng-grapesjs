@@ -101,7 +101,13 @@ class NgxNewsletterEditorComponent extends NgxEditorComponent {
                 attributes: {
                     title: 'Redo'
                 }
-            }
+            },
+            {
+                attributes: { title: 'Open Code' },
+                className: 'fa fa-code',
+                command: 'open-code',
+                id: 'open-code'
+              }
         ]);
     }
     addPlaceholders() {
@@ -150,7 +156,8 @@ class NgxWebpageEditorComponent extends NgxEditorComponent {
                 'gjs-blocks-basic',
                 'grapesjs-plugin-forms',
                 'grapesjs-plugin-ckeditor',
-                'grapesjs-blocks-table'
+                'grapesjs-blocks-table',
+                'grapesjs-component-code-editor'
             ],
             pluginsOpts: {
                 'grapesjs-blocks-table' : { 'containerId' : '#gjs' },
