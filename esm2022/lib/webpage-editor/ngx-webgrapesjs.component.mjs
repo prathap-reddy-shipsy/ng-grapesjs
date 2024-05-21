@@ -10,7 +10,8 @@ class NgxWebpageEditorComponent extends NgxEditorComponent {
                 'grapesjs-preset-webpage',
                 'gjs-blocks-basic',
                 'grapesjs-plugin-forms',
-                'grapesjs-plugin-ckeditor'
+                'grapesjs-plugin-ckeditor',
+                'grapesjs-component-code-editor'
             ],
             pluginsOpts: {
                 'grapesjs-preset-webpage': {
