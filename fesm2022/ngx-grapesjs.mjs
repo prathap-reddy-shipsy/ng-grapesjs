@@ -129,13 +129,13 @@ class NgxNewsletterEditorComponent extends NgxEditorComponent {
         }
     }
     static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "16.0.2", ngImport: i0, type: NgxNewsletterEditorComponent, deps: [{ token: NgxNewsletterEditorService }], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "16.0.2", type: NgxNewsletterEditorComponent, selector: "ngx-grapes-newsletter-editor", inputs: { placeholders: "placeholders" }, usesInheritance: true, ngImport: i0, template: '<div id="gjs"></div>', isInline: true }); }
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "16.0.2", type: NgxNewsletterEditorComponent, selector: "ngx-grapes-newsletter-editor", inputs: { placeholders: "placeholders" }, usesInheritance: true, ngImport: i0, template: '<div id="gjs1"></div>', isInline: true }); }
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "16.0.2", ngImport: i0, type: NgxNewsletterEditorComponent, decorators: [{
             type: Component,
             args: [{
                     selector: 'ngx-grapes-newsletter-editor',
-                    template: '<div id="gjs"></div>'
+                    template: '<div id="gjs2"></div>'
                 }]
         }], ctorParameters: function () { return [{ type: NgxNewsletterEditorService }]; }, propDecorators: { placeholders: [{
                 type: Input
@@ -166,13 +166,13 @@ class NgxWebpageEditorComponent extends NgxEditorComponent {
         this.setup(this.webpageConfig);
     }
     static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "16.0.2", ngImport: i0, type: NgxWebpageEditorComponent, deps: null, target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "16.0.2", type: NgxWebpageEditorComponent, selector: "ngx-grapes-webpage-editor", usesInheritance: true, ngImport: i0, template: '<div id="gjs"></div>', isInline: true }); }
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "16.0.2", type: NgxWebpageEditorComponent, selector: "ngx-grapes-webpage-editor", usesInheritance: true, ngImport: i0, template: '<div id="gjs3"></div>', isInline: true }); }
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "16.0.2", ngImport: i0, type: NgxWebpageEditorComponent, decorators: [{
             type: Component,
             args: [{
                     selector: 'ngx-grapes-webpage-editor',
-                    template: '<div id="gjs"></div>'
+                    template: '<div id="gjs4"></div>'
                 }]
         }] });
 
