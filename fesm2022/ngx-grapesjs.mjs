@@ -81,6 +81,7 @@ class NgxNewsletterEditorComponent extends NgxEditorComponent {
         this.editor = this.setup(this.newsletterConfig);
         this.addButtons();
         this.addPlaceholders();
+        console.log('gjs 3');
     }
     getRawHtml() {
         return this.editor?.runCommand?.('gjs-get-inlined-html');
@@ -164,6 +165,7 @@ class NgxWebpageEditorComponent extends NgxEditorComponent {
     }
     ngOnInit() {
         this.setup(this.webpageConfig);
+        console.log('gjs 2');
     }
     static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "16.0.2", ngImport: i0, type: NgxWebpageEditorComponent, deps: null, target: i0.ɵɵFactoryTarget.Component }); }
     static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "16.0.2", type: NgxWebpageEditorComponent, selector: "ngx-grapes-webpage-editor", usesInheritance: true, ngImport: i0, template: '<div id="gjs"></div>', isInline: true }); }
