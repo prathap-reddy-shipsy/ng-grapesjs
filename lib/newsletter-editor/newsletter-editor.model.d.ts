@@ -2,7 +2,6 @@ import { Config } from '../editor.model';
 export interface NewsletterEditor {
     Panels?: Panels;
     RichTextEditor?: TextEditor;
-    Commands?: Commands;
     runCommand?(command: string): string;
     UndoManager?: {
         undo(moves: number): void;
@@ -16,13 +15,10 @@ export interface TextEditor {
     add(name: string, option: TextOption): void;
     insertHTML(value: string): void;
 }
-interface Commands {
-    add(name: string, callback: Function): void;
-}
 export interface Panel {
     id: string;
     className: string;
-    command: Function;
+    command: (editor: NewsletterEditor, sender: CommandSender) => void;
     attributes: {
         title: string;
     };
@@ -30,8 +26,8 @@ export interface Panel {
 interface TextOption {
     icon: string;
     event: string;
-    result: Function;
-    update: Function;
+    result: (rte: TextEditor, action: TextAction) => void;
+    update: (rte: TextEditor, action: TextAction) => void;
 }
 export interface TextAction {
     btn: {
@@ -42,7 +38,7 @@ export interface TextAction {
 }
 export interface NewsletterConfig extends Config {
     parser: {
-        parserHtml: {};
+        parserHtml: object;
     };
 }
 export interface CommandSender {

@@ -27,7 +27,6 @@ class NgxEditorComponent {
                 id: this.storagePrefix
             }
         };
-        console.log('config');
         return grapesjs.init({
             ...config,
             ...customConfig
@@ -155,7 +154,7 @@ class NgxWebpageEditorComponent extends NgxEditorComponent {
                 'grapesjs-component-code-editor'
             ],
             pluginsOpts: {
-                'grapesjs-blocks-table' : { 'containerId' : '#gjs' },
+                'grapesjs-blocks-table': { 'containerId': '#gjs' },
                 'grapesjs-preset-webpage': {
                     modalTitleImport: 'Import template'
                 }
@@ -163,7 +162,20 @@ class NgxWebpageEditorComponent extends NgxEditorComponent {
         };
     }
     ngOnInit() {
-        this.setup(this.webpageConfig);
+        this.editor = this.setup(this.webpageConfig);
+        const pn = this.editor.Panels;
+        const panelViews = pn.addPanel({
+            id: 'views'
+        });
+        panelViews.get('buttons').add([{
+                attributes: {
+                    title: 'Open Code'
+                },
+                className: 'fa fa-file-code-o',
+                command: 'open-code',
+                togglable: false,
+                id: 'open-code'
+            }]);
     }
     static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "16.0.2", ngImport: i0, type: NgxWebpageEditorComponent, deps: null, target: i0.ɵɵFactoryTarget.Component }); }
     static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "16.0.2", type: NgxWebpageEditorComponent, selector: "ngx-grapes-webpage-editor", usesInheritance: true, ngImport: i0, template: '<div id="gjs"></div>', isInline: true }); }

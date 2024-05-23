@@ -1,18 +1,14 @@
 {
   "name": "ngx-grapesjs",
-  "version": "2.0.0",
+  "version": "1.1.0",
   "description": "Angular wrapper library for GrapesJS",
   "peerDependencies": {
     "@angular/common": "^16.0.0",
     "@angular/core": "^16.0.0",
     "grapesjs": "^0.21.1",
     "grapesjs-preset-newsletter": "^1.0.1",
-    "grapesjs-preset-webpage": "^1.0.3",
-    "grapesjs-blocks-basic": "^1.0.2",
-    "grapesjs-plugin-forms": "2.0.6",
-    "grapesjs-plugin-ckeditor": "1.0.1",
-    "grapesjs-blocks-table": "github:prathap-reddy-shipsy/grapesjs-blocks-table",
-    "grapesjs-component-code-editor": "^1.0.20"
+    "grapesjs-preset-webpage": "^1.0.2",
+    "grapesjs-blocks-basic": "^1.0.1"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -30,6 +26,11 @@
   "ng-add": {
     "save": "dependencies"
   },
+  "sideEffects": false,
+  "keywords": [
+    "angular",
+    "grapesjs"
+  ],
   "module": "fesm2022/ngx-grapesjs.mjs",
   "typings": "index.d.ts",
   "exports": {
@@ -42,6 +43,5 @@
       "esm": "./esm2022/ngx-grapesjs.mjs",
       "default": "./fesm2022/ngx-grapesjs.mjs"
     }
-  },
-  "sideEffects": false
+  }
 }

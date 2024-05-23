@@ -2,6 +2,7 @@ import { OnInit } from '@angular/core';
 import { NgxEditorComponent } from '../editor.component';
 import * as i0 from "@angular/core";
 export declare class NgxWebpageEditorComponent extends NgxEditorComponent implements OnInit {
+    editor: any;
     private webpageConfig;
     ngOnInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<NgxWebpageEditorComponent, never>;
